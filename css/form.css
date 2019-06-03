@@ -1,0 +1,444 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+@font-face {
+	font-family: Abolition;
+	src: url("https://use.typekit.net/iwk7icn.css");
+}
+
+body {
+	background-color: #f5f6f6;	
+}
+
+h1 {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 2rem;
+	text-align: left;
+	margin: 20px;
+	color: #101138;
+}
+
+a:link {
+	color: #eb2327;
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: #eb2327;
+}
+
+article {
+	width: 100%;
+	margin: auto;
+}
+
+fieldset {
+	color: #eb2327;
+	border: double 1px;
+	width: 90%;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.label {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1rem;
+
+}
+
+#line {
+	color: #eb2327;
+	border: double 2px;
+	width: 40px;
+	margin: 20px;
+	margin-top: -8px;
+}
+
+#discussion { 
+	margin-top: 20px;
+	text-align: justify;
+	padding: 10px;
+}
+
+h3 {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+
+p {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: .7rem;
+
+}
+
+aside {
+	text-align: left;
+	margin: 10px;
+	line-height: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	border: .5px solid #D3D3D3;
+	background-color: #f5f6f6;
+	border-top: none;
+	border-right: none;
+	border-left-style: none;
+	margin-top: 5px;
+}
+
+input[placeholder="Your Name"], input[placeholder="Your Email"], input[placeholder="Your Phone Number"] {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: .7rem;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.inline {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: .7rem;
+	margin: 10px;
+}
+
+.preference {
+	font-size: 1.2rem;
+	margin: 10px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+#yes {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#homepage {
+	margin: 10px;
+	padding: 5px;
+	font-family: 'roboto condensed', sans-serif;
+	text-align: center;
+	width: 90%;
+	background-color: #ffffff;
+	color: #000000;
+	border: double .5px;
+	margin-bottom: 30px;
+}
+
+.center {
+	margin: 10px;
+	margin-top: 20px;
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 1rem;
+}
+
+#contactmethod {
+	font-family: 'roboto condensed', sans-serif;
+	text-align: center;
+	font-size: .9rem;
+	margin: 10px;
+	margin-bottom: 20px;
+
+}
+
+#why {
+	margin: 10px;
+	padding: 5px;
+	font-family: 'roboto condensed', sans-serif;
+	text-align: center;
+	width: 90%;
+	background-color: #ffffff;
+	color: #000000;
+	border: double .5px;
+	margin-bottom: 30px;
+}
+
+#comments {
+	margin: 10px;
+	padding: 5px;
+	font-family: 'roboto condensed', sans-serif;
+	text-align: center;
+	width: 90%;
+	background-color: #ffffff;
+	color: #000000;
+	border: double .5px;
+	margin-bottom: 30px;
+	height: 30vh;
+}
+
+input[type="submit"] {
+	margin-right: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+	background-color: #101138;
+	color: #ffffff;
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 30px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	background-color: #eb2327;
+	opacity: .5;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-height: 424px) {
+
+	#discussion {
+		text-align: left;
+		font-size: .8rem;
+	}
+
+	input[type="text"], input[type="email"], input[type="tel"] {
+		width: 30%;
+		margin: 5%;
+	}
+}
+
+ @media (min-width: 768px) {
+
+ 	#discussion {
+ 		font-size: 1.5rem;
+ 		line-height: 1.5rem;
+ 		margin-bottom: 30px;
+ 	}
+
+ 	legend {
+ 		font-size: 1.5rem;
+ 	}
+
+ 	#tablet {
+ 		display: block;
+ 		width: 60%;
+ 		margin: auto;
+ 	}
+
+ 	.tablet_t {
+ 		display: block;
+ 		width: 70%;
+ 		margin: auto;
+ 	}
+
+ 	#homepage {
+ 		display: block;
+ 		width: 58%;
+ 		margin: auto;
+ 	}
+
+ 	fieldset {
+ 		width: 95%;
+ 		margin: auto;
+ 		margin-bottom: 20px;
+ 		margin-top: 20px;
+ 	}
+
+ 	#why {
+ 		display: block;
+ 		width: 90%;
+ 		margin: auto;
+ 		margin-top: 10px;
+ 	}
+
+ 	#contactmethod {
+ 		margin-left: 20px;
+ 	}
+
+ 	#comments {
+ 		display: block;
+ 		width: 72%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	#box {
+ 		display: block;
+ 		width: 73%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	#buttons {
+ 		display: block;
+ 		width: 76%;
+ 		margin: auto;
+ 	}
+ }
+
+ @media (min-width: 1023px) {
+
+ 	input[placeholder="Your Name"], input[placeholder="Your Email"], input[placeholder="Your Phone Number"] {
+ 		font-size: 1.2rem;
+ 	}
+
+ 	input[type="text"], input[type="email"], input[type="tel"], textarea {
+ 		font-size: 1.2rem;
+ 	}
+
+ 	.inline {
+ 		font-size: 1rem;
+ 	}
+
+ 	.grow {
+ 		font-size: 1rem;
+ 	}
+
+ 	input [type="checkbox"] {
+ 		font-size: 1.4rem;
+ 	}
+
+ 	#discussion {
+ 		font-size: 1.2rem;
+ 		line-height: 1.5rem;
+ 		margin-bottom: 30px;
+ 	}
+
+ 	#tablet {
+ 		display: block;
+ 		width: 45%;
+ 		margin: auto;
+ 	}
+
+ 	.tablet_t {
+ 		display: block;
+ 		width: 60%;
+ 		margin: auto;
+ 	}
+
+ 	#move_1 {
+ 		margin: auto;
+ 		display: block;
+ 		padding: 2px;
+ 	}
+
+ 	#move {
+ 		float: right;
+ 		margin: auto;
+ 		margin-bottom: 2%;
+ 		margin-top: -5%;
+ 		display: block;
+ 		width: 50%;
+ 	}
+
+ 	legend {
+ 		font-size: 1.5rem;
+ 	}
+
+
+ 	#homepage {
+ 		display: block;
+ 		width: 58%;
+ 		margin: auto;
+ 	}
+
+ 	fieldset {
+ 		width: 95%;
+ 		margin: auto;
+ 		margin-bottom: 20px;
+ 		margin-top: 20px;
+ 	}
+
+ 	#why {
+ 		margin-bottom: 5%;
+ 	}
+
+ 	#contactmethod {
+ 		margin-left: 20px;
+ 	}
+
+ 	#comments {
+ 		display: block;
+ 		width: 70%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	#box {
+ 		display: block;
+ 		width: 71%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	#buttons {
+ 		display: block;
+ 		width: 73%;
+ 		margin: auto;
+ 	}
+
+ }
+
+  @media (min-width: 1339px) {
+
+  	fieldset {
+ 		width: 85%;
+ 		margin: auto;
+ 		margin-bottom: 20px;
+ 		margin-top: 20px;
+ 	}
+
+ 	#tablet {
+ 		display: block;
+ 		width: 30%;
+ 		margin: auto;
+ 	}
+
+ 	#homepage {
+ 		margin: auto;
+ 		display: block;
+ 		width: 50%;
+ 	}
+
+  	#why {
+  		width: 80%;
+  		margin: auto;
+  		display: block;
+  		margin-top: 2%;
+  		margin-left: 3%;
+  	}
+
+  	#buttons {
+ 		display: block;
+ 		width: 60%;
+ 		margin: auto;
+ 	}
+
+ 	#box {
+ 		display: block;
+ 		width: 59%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+ 	}
+
+ 	#comments {
+ 		display: block;
+ 		width: 58%;
+ 		margin: auto;
+ 		margin-bottom: 10px;
+
+ 	}
+ }
+
+ 
+ 	
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,185 @@
+
+/* COLOR PALETTE 
+
+#f5f6f6 - grey (background - main pages)
+#eb2327 - red (hover, click, background - landing)
+#231f20 - black (text)
+#101138 - blue (landing page title)
+
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+
+@font-face {
+	font-family: Abolition;
+	src: url("https://use.typekit.net/iwk7icn.css");
+}
+
+body {
+	background-color: #eb2327;	
+}
+
+/* START STICKY FOOTER */
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+
+/* END STICKY FOOTER */
+
+#container {
+	width: 100%;
+	margin: auto;
+	background-color: #eb2327;
+}
+
+header, footer, nav {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'abolition-soft', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	color: #101138;
+	padding-top: 120px;
+}
+
+/* START NAVIGATION */
+
+nav {
+	font-family: 'roboto condensed', sans-serif;
+	font-size: 24px;
+	background-color: #eb2327;
+}
+nav ul {
+	list-style-type: none;
+}
+nav ul li {
+	display: inline-block;
+	padding: 5px;
+}
+nav ul li a:link, nav ul li a:visited {
+	color: #ffffff;
+	font-size: 18px;
+	text-decoration: none; 
+}
+nav ul li a:hover, nav ul li a:active {
+	opacity: .5;
+}
+
+/* END NAVIGATION */
+
+
+/* FOOTER STYLES */
+
+footer {
+	font-family: 'roboto-condensed', sans-serif;
+	font-size: 10px;
+	background-color: #eb2327;
+	padding-bottom: 20px;
+	
+}
+
+footer ul {
+	font-family: 'robotocondensed-light', sans-serif;
+	font-size: 12px;
+	display: inline-block;
+	list-style-type: none;
+}
+
+footer ul li {
+	display: inline-block;
+	padding: 2px;
+}
+
+footer ul li a:link {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+footer ul li a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	opacity: .5;
+}
+
+footer ul li a:active {
+	opacity: .5;
+}
+
+/* END FOOTER STYLES */
+
+
+/* Media Queries | Responsive Design */
+
+@media (min-width: 320px) {
+
+	h1 {
+		width: 90%;
+		margin: auto;
+
+	}
+	 
+}
+
+@media (min-width: 351px) {
+
+	h1 {
+		width: 80%;
+		margin: auto;
+	}
+
+} 
+
+@media (min-width: 390px) and (max-width: 401px) {
+
+	h1 {
+		width: 70%;
+		margin: auto;
+	}
+	
+}
+
+@media (min-width: 402px) {
+
+	h1 {
+		width: 100%;
+		margin: auto;
+	}
+
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+
+
+}
+
+@media (min-width: 1000px) {
+
+
+}
+
+
+
+
+
+

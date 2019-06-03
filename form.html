@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Contact Form</title>
+
+		<link type="text/css" rel="stylesheet" href="css/form.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<article id="contact_form">
+
+			<h1>Let's Discuss</h1>
+
+			<fieldset id="line"></fieldset>
+
+			<aside>
+
+			<p id="discussion">Debate and discussion is what drives this blog. Your thoughts, opinions, and views matter. Share them with us below. In addition, suggestions for hot topics and other discussion points are welcome. No longer want to fill out this form? Head on back to <a href="contact.html">We Are Generation Why</a>.</p>
+
+			</aside>
+
+			<form id="gen_form" name="gen_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+
+				
+					<h3>Your Information</h3>
+
+					<p id=tablet>
+						<label class="label" for="name"></label><br/>
+						<input name="name" type="text" id="name" placeholder="Your Name" size="20" />
+
+						<label class="label" for="email_address"></label>
+						<input name="email_address" type="email" id="email_address" placeholder="Your Email" size="20" required/>
+
+						<label class="label" for="phone_number"></label>
+						<input name="phone_number" type="tel" id="phone_number" placeholder="Your Phone Number" size="20" /><br/>
+
+					</p>
+
+					<p>
+  						<label class="label" for="name"></label><br>
+  						<input name="homepage" type="text" id="homepage" placeholder="Your Website or Blog"/>
+					</p>
+
+					<fieldset></fieldset>
+
+					<article class="tablet_t">
+
+					<p id="move_1" class="center">1. Can we contact you?
+						<input type="radio" name="approval" id="yes" value="yes">
+						<label class="inline" for="yes">Yes</label>
+						<input type="radio" name="approval" id="no" value="no">
+						<label class="inline" for="no">No</label>
+					</p>
+
+					<p id="move">
+						<label class="center">2. Which contact method do you prefer?</label><br>
+						<input type="checkbox" name="email_address" value="email" class="preference">
+						<label class="grow">Email</label><br> 
+						<input type="checkbox" name="phone_number" value="phone" class="preference">
+						<label class="grow">Phone</label><br>   
+						<input type="checkbox" name="website_form" value="web_form" class="preference">
+						<label class="grow">Website Form</label><br>
+					</p>
+
+					</article>
+
+					<fieldset></fieldset>
+
+					<article class="tablet_t">
+
+					<p>
+						<label class="center">1. Was this form simple to use?</label><br>
+						<select name="contactmethod" id="contactmethod">
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						</select>
+					</p>
+
+					<p>
+
+					<label class="center">2. If not, why?</label><br>
+					<input name="why" type="text" id="why" size="100"/>
+
+					</p>
+
+					</article>
+
+					<fieldset></fieldset>
+
+					<p>
+						<label id="box" class="center" for="comments">Your Message</label>
+						<textarea name="comments" id="comments"></textarea>
+					</p>
+
+					<p id="buttons">
+						<input type="submit" name="submit" value="Submit"/>
+						<input type="reset" name="reset" value="Reset"/>
+					</p>
+			</form>
+
+		</article>
+
+
+	</body>
+
+</html>
